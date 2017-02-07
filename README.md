@@ -9,3 +9,8 @@
 2/6/2017 8:15 PM - Started spells base
 
 2/6/2017 9:49 PM - Spell base finished
+
+2/6/2017 9:50 PM - Started summoners base
+
+2/6/2017 9:58 PM - Summoners base finished
+
