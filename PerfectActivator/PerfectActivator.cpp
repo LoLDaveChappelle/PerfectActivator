@@ -387,6 +387,11 @@ public:
 	}
 	virtual bool IsReady() override
 	{
+		if (GEntityList->Player()->HealthPercent() <= 50)
+		{
+			CrystallineFlask().UseFlask();
+
+		}
 		return false;
 	}
 
@@ -441,6 +446,7 @@ void LoadAllItems()
 	 */
 	GAllItems.push_back(new HealthPot());
 	GAllItems.push_back(new Biscuits());
+	GAllItems.push_back(new Hunter());
 	GAllItems.push_back(new Refill());
 	GAllItems.push_back(new Corrupt());
 	GAllItems.push_back(new Crystalline());
