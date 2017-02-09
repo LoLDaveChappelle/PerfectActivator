@@ -9,6 +9,7 @@
 #include "QuicksilverSash.h"
 #include "DervishBlade.h"
 #include "MikaelsCrucible.h"
+#include "HuntersPot.h"
 
 
 PluginSetup("PerfectActivator");
@@ -208,7 +209,6 @@ public:
 	}
 	virtual void OnGameUpdate() override
 	{
-		GGame->PrintChat("ONGAMEUPDATE");
 		IsReady();
 	}
 
@@ -257,6 +257,48 @@ private:
 	void DoesOwnMessage()
 	{
 		GGame->PrintChat("Biscuits Found!");
+	}
+};
+class Hunter : public IActivate
+{
+public:
+	virtual void OnLoad() override
+	{
+		HuntersPot().Menu();
+	}
+	virtual void OnRender() override
+	{
+	}
+	virtual bool IsReady() override
+	{
+		if (GEntityList->Player()->HealthPercent() <= 50)
+		{
+			HuntersPot().UseHuntersPotion();
+
+		}
+		return false;
+	}
+
+	virtual bool DoesOwn() override
+	{
+		if (GEntityList->Player()->HasItemId(2032))
+		{
+			DoesOwnMessage();
+		}
+		else return false;
+	}
+	virtual void OnGameUpdate() override
+	{
+	}
+
+	virtual void unLoad() override
+	{
+	}
+
+private:
+	void DoesOwnMessage()
+	{
+		GGame->PrintChat("Hunters Potion Found!");
 	}
 };
 class Refill : public IActivate
