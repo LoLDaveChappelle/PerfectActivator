@@ -16,3 +16,7 @@
 
 2/6/2017 9:58 PM - Inheriting menu to add items to menu
 
+2/9/2017 - Health potion added
+
+2/9/2017 - Hunter potion added
+
