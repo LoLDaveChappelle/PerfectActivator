@@ -20,3 +20,4 @@
 
 2/9/2017 - Hunter potion added
 
+2/9/2017 - all consumables finished. 
