@@ -10,7 +10,7 @@ public:
 	IMenuOption* HealthPercent;
 	IMenu* CorruptingPotionMenu;
 	int HealthPotionID = 2033;
-	IInventoryItem* pItem = GPluginSDK->CreateItemForId(2003, 100);
+	IInventoryItem* pItem = GPluginSDK->CreateItemForId(2033, 100);
 
 	void  Menu()
 	{
