@@ -6,17 +6,26 @@
 class CorruptingPotion
 {
 public:
-	IMenuOption* UseHealthPot;
+	IMenuOption* UseCorruptingPot;
 	IMenuOption* HealthPercent;
-	IMenu* HealthPotionMenu;
+	IMenu* CorruptingPotionMenu;
 	int HealthPotionID = 2033;
+	IInventoryItem* pItem = GPluginSDK->CreateItemForId(2003, 100);
 
 	void  Menu()
 	{
-		HealthPotionMenu = ItemMenu->ConsumablesMenu->AddMenu("Corrupting Pot");
-		UseHealthPot = HealthPotionMenu->CheckBox("Use Corrupting Pot", true);
-		HealthPercent = HealthPotionMenu->AddInteger("Hero Health %", 0, 100, 50);
+		CorruptingPotionMenu = ItemMenu->ConsumablesMenu->AddMenu("Corrupting Pot");
+		UseCorruptingPot = CorruptingPotionMenu->CheckBox("Use Corrupting Pot", true);
+		HealthPercent = CorruptingPotionMenu->AddInteger("Hero Health %", 0, 100, 50);
 	}
 
+	void UseCorrupting()
+	{
+		if (GEntityList->Player()->HasBuff("RegenerationPotion"))
+		{
+			return;
+		}
+		pItem->CastOnPlayer();
+	}
 
 };
