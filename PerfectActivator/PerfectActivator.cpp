@@ -313,9 +313,13 @@ public:
 	}
 	virtual bool IsReady() override
 	{
+		if (GEntityList->Player()->HealthPercent() <= 50)
+		{
+			RefillablePot().UseRefillPotion();
+
+		}
 		return false;
 	}
-
 	virtual bool DoesOwn() override
 	{
 		if (GEntityList->Player()->HasItemId(2031))
