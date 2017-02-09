@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92C08E5D-1052-496E-BA49-784A3D52A5D1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PerfectActivator</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PERFECTACTIVATOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;PERFECTACTIVATOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PERFECTACTIVATOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;PERFECTACTIVATOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="alphastrike.h" />
+    <ClInclude Include="barrier.h" />
+    <ClInclude Include="BilgewatersCutlass.h" />
+    <ClInclude Include="Biscuit.h" />
+    <ClInclude Include="blackshield.h" />
+    <ClInclude Include="BladeoftheRuinedKing.h" />
+    <ClInclude Include="blindmonkwone.h" />
+    <ClInclude Include="boost.h" />
+    <ClInclude Include="braume.h" />
+    <ClInclude Include="BuildMenu.h" />
+    <ClInclude Include="chronobreak.h" />
+    <ClInclude Include="chronoshift.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ControlWard.h" />
+    <ClInclude Include="CorruptingPot.h" />
+    <ClInclude Include="CrystallineFlask.h" />
+    <ClInclude Include="defensiveballcurl.h" />
+    <ClInclude Include="DervishBlade.h" />
+    <ClInclude Include="dianaorbs.h" />
+    <ClInclude Include="dot.h" />
+    <ClInclude Include="EdgeofNight.h" />
+    <ClInclude Include="ElixirofRuin.h" />
+    <ClInclude Include="Entropy.h" />
+    <ClInclude Include="evelynnw.h" />
+    <ClInclude Include="exhuast.h" />
+    <ClInclude Include="eyeofthestorm.h" />
+    <ClInclude Include="FaceofTheMountain.h" />
+    <ClInclude Include="fioraw.h" />
+    <ClInclude Include="fizzjump.h" />
+    <ClInclude Include="FrostQueensClaim.h" />
+    <ClInclude Include="galiobulwark.h" />
+    <ClInclude Include="gangplankw.h" />
+    <ClInclude Include="garenq.h" />
+    <ClInclude Include="garenw.h" />
+    <ClInclude Include="GuardiansHorn.h" />
+    <ClInclude Include="hallucinatefull.h" />
+    <ClInclude Include="heal.h" />
+    <ClInclude Include="HealthPotion.h" />
+    <ClInclude Include="HextechGPL800.h" />
+    <ClInclude Include="HextechGunblade.h" />
+    <ClInclude Include="HextechProtobelt-01.h" />
+    <ClInclude Include="highlander.h" />
+    <ClInclude Include="HuntersPot.h" />
+    <ClInclude Include="imbue.h" />
+    <ClInclude Include="judicatorblessing.h" />
+    <ClInclude Include="judicatorintervention.h" />
+    <ClInclude Include="kalistarx.h" />
+    <ClInclude Include="karmasolkimshield.h" />
+    <ClInclude Include="kindredr.h" />
+    <ClInclude Include="KnightsVow.h" />
+    <ClInclude Include="leonasolarbarrier.h" />
+    <ClInclude Include="lissandrar.h" />
+    <ClInclude Include="LocketofIronSolari.h" />
+    <ClInclude Include="LPPConstants.h" />
+    <ClInclude Include="lulue.h" />
+    <ClInclude Include="lulur.h" />
+    <ClInclude Include="luxprismaticwave.h" />
+    <ClInclude Include="mana.h" />
+    <ClInclude Include="maokaiunstablegrowth.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MercurialScimitar.h" />
+    <ClInclude Include="MikaelsCrucible.h" />
+    <ClInclude Include="moltenshield.h" />
+    <ClInclude Include="mordekaiserw.h" />
+    <ClInclude Include="Muramana.h" />
+    <ClInclude Include="Muramana2.h" />
+    <ClInclude Include="namiw.h" />
+    <ClInclude Include="nautiluspiercinggaze.h" />
+    <ClInclude Include="nocturneshroudofdarkness.h" />
+    <ClInclude Include="obduracy.h" />
+    <ClInclude Include="OdynsVeil.h" />
+    <ClInclude Include="OracleLens.h" />
+    <ClInclude Include="OraclesExtract.h" />
+    <ClInclude Include="orianaredactcommand.h" />
+    <ClInclude Include="PluginData.h" />
+    <ClInclude Include="PluginSDK.h" />
+    <ClInclude Include="poro.h" />
+    <ClInclude Include="primalsurge.h" />
+    <ClInclude Include="QuicksilverSash.h" />
+    <ClInclude Include="RanduinsOmen.h" />
+    <ClInclude Include="RavenousHydra.h" />
+    <ClInclude Include="Redemption.h" />
+    <ClInclude Include="RefillablePot.h" />
+    <ClInclude Include="RighteousGlory.h" />
+    <ClInclude Include="rivenfeint.h" />
+    <ClInclude Include="rumbleshield.h" />
+    <ClInclude Include="sadism.h" />
+    <ClInclude Include="Seraphs.h" />
+    <ClInclude Include="SeraphsEmbrace.h" />
+    <ClInclude Include="shenw.h" />
+    <ClInclude Include="sionw.h" />
+    <ClInclude Include="sivire.h" />
+    <ClInclude Include="skarnerw.h" />
+    <ClInclude Include="smite.h" />
+    <ClInclude Include="snowball.h" />
+    <ClInclude Include="sonaw.h" />
+    <ClInclude Include="sorakar.h" />
+    <ClInclude Include="sorakaw.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tahmkenche.h" />
+    <ClInclude Include="TalismanofAscension.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="teleport.h" />
+    <ClInclude Include="threshw.h" />
+    <ClInclude Include="Tiamat.h" />
+    <ClInclude Include="TitanicHydra.h" />
+    <ClInclude Include="triumphantroar.h" />
+    <ClInclude Include="udyrturtle.h" />
+    <ClInclude Include="undyingrage.h" />
+    <ClInclude Include="urgotshield.h" />
+    <ClInclude Include="UseItem.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="vladimirsanguinepool.h" />
+    <ClInclude Include="WoogletsWitchcap.h" />
+    <ClInclude Include="yorickreviveally.h" />
+    <ClInclude Include="YoumuusGhostblade.h" />
+    <ClInclude Include="zedult.h" />
+    <ClInclude Include="ZekesHarbringer.h" />
+    <ClInclude Include="ZhonyasHourglass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PerfectActivator.cpp" />
+    <ClCompile Include="PluginSDK.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

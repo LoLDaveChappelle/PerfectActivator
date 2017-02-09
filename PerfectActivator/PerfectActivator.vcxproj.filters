@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Items">
+      <UniqueIdentifier>{fa3b906e-c4f8-4683-b48b-0604018b70b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Items\Cleansers">
+      <UniqueIdentifier>{b07e8806-7a33-4e41-bbcb-c568dd4a091f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Items\Consumables">
+      <UniqueIdentifier>{e3de4841-f085-407d-9d7d-70aabbf9e92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Items\Defensives">
+      <UniqueIdentifier>{87875baf-f3a6-41eb-bbdd-20e1954276ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Items\Offensives">
+      <UniqueIdentifier>{c1d0ce0e-ed26-4992-a932-1709caca8872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells">
+      <UniqueIdentifier>{eeb25916-a308-4afe-be82-72b916787212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells\Dodges">
+      <UniqueIdentifier>{73de944b-cedb-473b-b517-b4448d5cb183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells\Heals">
+      <UniqueIdentifier>{7d78290c-6808-4b4e-b0e6-ac3a56c71fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells\Health">
+      <UniqueIdentifier>{7ba8e36a-bfb9-4020-b9a8-2f8d684757c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells\Shields">
+      <UniqueIdentifier>{78a495c8-1ef1-486f-bc40-a5bfc1a9b732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells\Slows">
+      <UniqueIdentifier>{cc6bb94c-72be-4fd0-92d2-2baef4899dd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Summoners">
+      <UniqueIdentifier>{b3d2aa3c-da5e-4e53-8cfa-ef4b39d38cc3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LPPConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginSDK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuicksilverSash.h">
+      <Filter>Items\Cleansers</Filter>
+    </ClInclude>
+    <ClInclude Include="DervishBlade.h">
+      <Filter>Items\Cleansers</Filter>
+    </ClInclude>
+    <ClInclude Include="MercurialScimitar.h">
+      <Filter>Items\Cleansers</Filter>
+    </ClInclude>
+    <ClInclude Include="MikaelsCrucible.h">
+      <Filter>Items\Cleansers</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthPotion.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="Biscuit.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="RefillablePot.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntersPot.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="CorruptingPot.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="CrystallineFlask.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlWard.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="OraclesExtract.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="ElixirofRuin.h">
+      <Filter>Items\Consumables</Filter>
+    </ClInclude>
+    <ClInclude Include="SeraphsEmbrace.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="Seraphs.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="TalismanofAscension.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="WoogletsWitchcap.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="Redemption.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="KnightsVow.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="RanduinsOmen.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="ZhonyasHourglass.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="OdynsVeil.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="LocketofIronSolari.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="OracleLens.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceofTheMountain.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="EdgeofNight.h">
+      <Filter>Items\Defensives</Filter>
+    </ClInclude>
+    <ClInclude Include="Muramana.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="Muramana2.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="HextechGPL800.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardiansHorn.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="ZekesHarbringer.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="RavenousHydra.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiamat.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="FrostQueensClaim.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="YoumuusGhostblade.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="BilgewatersCutlass.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="HextechGunblade.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="HextechProtobelt-01.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="BladeoftheRuinedKing.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="Entropy.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="TitanicHydra.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="RighteousGlory.h">
+      <Filter>Items\Offensives</Filter>
+    </ClInclude>
+    <ClInclude Include="alphastrike.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="blackshield.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="chronobreak.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="fizzjump.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="hallucinatefull.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="judicatorintervention.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="lissandrar.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="maokaiunstablegrowth.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="nocturneshroudofdarkness.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="sivire.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="vladimirsanguinepool.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="zedult.h">
+      <Filter>Spells\Dodges</Filter>
+    </ClInclude>
+    <ClInclude Include="gangplankw.h">
+      <Filter>Spells\Heals</Filter>
+    </ClInclude>
+    <ClInclude Include="imbue.h">
+      <Filter>Spells\Heals</Filter>
+    </ClInclude>
+    <ClInclude Include="judicatorblessing.h">
+      <Filter>Spells\Heals</Filter>
+    </ClInclude>
+    <ClInclude Include="namiw.h">
+      <Filter>Spells\Heals</Filter>
+    </ClInclude>
+    <ClInclude Include="primalsurge.h">
+      <Filter>Spells\Heals</Filter>
+    </ClInclude>
+    <ClInclude Include="sonaw.h">
+      <Filter>Spells\Heals</Filter>
+    </ClInclude>
+    <ClInclude Include="sorakaw.h">
+      <Filter>Spells\Heals</Filter>
+    </ClInclude>
+    <ClInclude Include="triumphantroar.h">
+      <Filter>Spells\Heals</Filter>
+    </ClInclude>
+    <ClInclude Include="chronoshift.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="kalistarx.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="kindredr.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="lulur.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="sadism.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="sorakar.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="tahmkenche.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="threshw.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="undyingrage.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="yorickreviveally.h">
+      <Filter>Spells\Health</Filter>
+    </ClInclude>
+    <ClInclude Include="blindmonkwone.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="braume.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="defensiveballcurl.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="dianaorbs.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="eyeofthestorm.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="fioraw.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="galiobulwark.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="garenw.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="karmasolkimshield.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="leonasolarbarrier.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="lulue.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="luxprismaticwave.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="moltenshield.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="mordekaiserw.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="nautiluspiercinggaze.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="obduracy.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="orianaredactcommand.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="rivenfeint.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="rumbleshield.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="shenw.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="sionw.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="skarnerw.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="udyrturtle.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="urgotshield.h">
+      <Filter>Spells\Shields</Filter>
+    </ClInclude>
+    <ClInclude Include="evelynnw.h">
+      <Filter>Spells\Slows</Filter>
+    </ClInclude>
+    <ClInclude Include="garenq.h">
+      <Filter>Spells\Slows</Filter>
+    </ClInclude>
+    <ClInclude Include="highlander.h">
+      <Filter>Spells\Slows</Filter>
+    </ClInclude>
+    <ClInclude Include="barrier.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="boost.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="dot.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="exhuast.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="heal.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="mana.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="poro.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="smite.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="snowball.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="teleport.h">
+      <Filter>Summoners</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UseItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PerfectActivator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginSDK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
