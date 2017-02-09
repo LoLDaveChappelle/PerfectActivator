@@ -6,17 +6,25 @@
 class RefillablePot
 {
 public:
-	IMenuOption* UseHealthPot;
-	IMenuOption* HealthPercent;
-	IMenu* HealthPotionMenu;
+	IMenuOption* UseRuinExilir;
+	IMenuOption* RuinHealthPercent;
+	IMenu* RuinMenu;
 	int HealthPotionID = 2033;
+	IInventoryItem* pItem = GPluginSDK->CreateItemForId(2041, 100);
 
 	void  Menu()
 	{
-		HealthPotionMenu = ItemMenu->ConsumablesMenu->AddMenu("Refillable Pot");
-		UseHealthPot = HealthPotionMenu->CheckBox("Use Refillable Pot", true);
-		HealthPercent = HealthPotionMenu->AddInteger("Hero Health %", 0, 100, 50);
+		RuinMenu = ItemMenu->ConsumablesMenu->AddMenu("Refillable Pot");
+		UseRuinExilir = RuinMenu->CheckBox("Use Refillable Pot", true);
+		RuinHealthPercent = RuinMenu->AddInteger("Hero Health %", 0, 100, 50);
 	}
 
-
+	void UseRuin()
+	{
+		if (GEntityList->Player()->HasBuff("RegenerationPotion"))
+		{
+			return;
+		}
+		pItem->CastOnPlayer();
+	}
 };
