@@ -10,6 +10,7 @@
 #include "DervishBlade.h"
 #include "MikaelsCrucible.h"
 #include "HuntersPot.h"
+#include "ElixirofRuin.h"
 
 
 PluginSetup("PerfectActivator");
@@ -234,6 +235,10 @@ public:
 	}
 	virtual bool IsReady() override
 	{
+		if (GEntityList->Player()->HealthPercent() <= 50)
+		{
+			Biscuit().UseBiscuits();
+		}
 		return false;
 	}
 
@@ -354,6 +359,11 @@ public:
 	}
 	virtual bool IsReady() override
 	{
+		if (GEntityList->Player()->HealthPercent() <= 50)
+		{
+			CorruptingPotion().UseCorrupting();
+
+		}
 		return false;
 	}
 
@@ -421,6 +431,48 @@ private:
 		GGame->PrintChat("Crystalline Flask Found!");
 	}
 };
+class Ruin : public IActivate
+{
+public:
+	virtual void OnLoad() override
+	{
+		ElixirofRuin().Menu();
+	}
+	virtual void OnRender() override
+	{
+	}
+	virtual bool IsReady() override
+	{
+		if (GEntityList->Player()->HealthPercent() <= 50)
+		{
+			ElixirofRuin().UseRuin();
+
+		}
+		return false;
+	}
+
+	virtual bool DoesOwn() override
+	{
+		if (GEntityList->Player()->HasItemId(2041))
+		{
+			DoesOwnMessage();
+		}
+		else return false;
+	}
+	virtual void OnGameUpdate() override
+	{
+	}
+
+	virtual void unLoad() override
+	{
+	}
+
+private:
+	void DoesOwnMessage()
+	{
+		GGame->PrintChat("Crystalline Flask Found!");
+	}
+};
 
 
 
@@ -453,6 +505,7 @@ void LoadAllItems()
 	GAllItems.push_back(new Hunter());
 	GAllItems.push_back(new Refill());
 	GAllItems.push_back(new Corrupt());
+	GAllItems.push_back(new Ruin());
 	GAllItems.push_back(new Crystalline());
 
 	for (auto i : GAllItems)
