@@ -6,10 +6,11 @@
 class Biscuit
 {
 public:
+	IMenu* BuscuitMenu;
 	IMenuOption* UseBiscuit;
 	IMenuOption* BiscuitHealthPercent;
-	IMenu* BuscuitMenu;
 	int HealthPotionID = 2033;
+	IInventoryItem* pItem = GPluginSDK->CreateItemForId(2010, 100);
 
 	void  Menu()
 	{
@@ -18,5 +19,14 @@ public:
 		BiscuitHealthPercent = BuscuitMenu->AddInteger("Hero Health %", 0, 100, 50);
 	}
 
+
+	void UseBiscuits()
+	{
+		if (GEntityList->Player()->HasBuff("RegenerationPotion"))
+		{
+			return;
+		}
+		pItem->CastOnPlayer();
+	}
 
 };
